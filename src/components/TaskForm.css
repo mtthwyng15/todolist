@@ -1,0 +1,22 @@
+.addTask{
+  padding: 9px;
+  margin: 10px 10px;
+  font-family: Arial, Helvetica;
+  width: 250px;
+  text-align: center;
+}
+
+.btn-add{
+  /* border: 2px solid black; */
+  padding: 9px;
+  border-radius: 8px;
+  background-color: #00FFFF;
+  /* #43D1AF */
+  font-family: Arial, Helvetica;
+  width: 100px;
+  color: #555;
+}
+
+.btn-add:hover{
+  background: #1799B5;
+}
