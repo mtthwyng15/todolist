@@ -8,7 +8,7 @@ class App extends Component {
 
   constructor(){
     super();
-    
+
     this.state = {
       todoList: ['study', 'work', 'sleep'],
       newTask: ''
@@ -25,10 +25,13 @@ class App extends Component {
     event.preventDefault();
     const {todoList,newTask} = this.state
 
-    this.setState({
-      todoList: [...todoList, newTask],
-      newTask: ''
-    })
+    if(newTask!==''){
+      this.setState({
+        todoList: [...todoList, newTask],
+        newTask: ''
+      })
+    }
+
   }
 
   render(){
