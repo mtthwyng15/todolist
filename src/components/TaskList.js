@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './TaskList.css'
 
 class TaskList extends Component{
   render(){
@@ -25,7 +26,7 @@ class TaskList extends Component{
                         <th scope="row">1</th>
                         <td>{todoList[i]}</td>
                         <td>
-                          <button onClick={(e) => remove(item)} > x </button>
+                          <button className='btn-danger' onClick={(e) => remove(item)} > Remove </button>
                         </td>
                       </tr>
                     )

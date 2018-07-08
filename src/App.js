@@ -57,8 +57,6 @@ class App extends Component {
 
         <TaskForm getValue={this.addList} submitForm={this.addTodo} value={this.state.newTask}/>
 
-        {/*  */}
-
         <TaskList todoList={todoList} remove={this.removeTask}/>
       </div>
     );
