@@ -31,7 +31,19 @@ class App extends Component {
         newTask: ''
       })
     }
+  }
 
+  removeTask = (task) => {
+
+    const {todoList} = this.state;
+
+    const updatedTodoList = todoList.filter(updateTasks => {
+      return updateTasks !== task;
+    })
+
+    this.setState({
+      todoList: [...updatedTodoList]
+    })
   }
 
   render(){
@@ -47,7 +59,7 @@ class App extends Component {
 
         {/*  */}
 
-        <TaskList todoList={todoList}/>
+        <TaskList todoList={todoList} remove={this.removeTask}/>
       </div>
     );
   }

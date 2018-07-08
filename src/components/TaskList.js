@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
 class TaskList extends Component{
-  // const {todoList} = this.props; 
   render(){
+    const {todoList,remove} = this.props;
     return(
       <div>
         <div className='row'>
@@ -19,12 +19,14 @@ class TaskList extends Component{
               </thead>
               <tbody>
                 {
-                  this.props.todoList.map(item => {
+                todoList.map((item,i) => {
                     return(
-                      <tr key={item}>
+                      <tr key={i}>
                         <th scope="row">1</th>
-                        <td>{item}</td>
-                        <td>Button</td>
+                        <td>{todoList[i]}</td>
+                        <td>
+                          <button onClick={(e) => remove(item)} > x </button>
+                        </td>
                       </tr>
                     )
                   })
