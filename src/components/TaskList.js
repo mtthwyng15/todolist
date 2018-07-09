@@ -23,7 +23,7 @@ class TaskList extends Component{
                 todoList.map((item,i) => {
                     return(
                       <tr key={i}>
-                        <th scope="row">1</th>
+                        <th scope="row">{i+1}</th>
                         <td>{todoList[i]}</td>
                         <td>
                           <button className='btn-danger' onClick={(e) => remove(item)} > Remove </button>
