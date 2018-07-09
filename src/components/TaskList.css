@@ -2,4 +2,12 @@
   font-family: Arial, Helvetica;
   border-radius: 8px;
   text-align: center;
+  margin-left: 5px;
+}
+
+.btn-success{
+  font-family: Arial, Helvetica;
+  border-radius: 8px;
+  text-align: center;
+  margin-right: 5px;
 }
